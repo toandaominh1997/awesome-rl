@@ -52,7 +52,9 @@ Forward-view Sarsa(![](https://latex.codecogs.com/gif.latex?\fn_cm&space;\lambda
 
 ![](https://latex.codecogs.com/gif.latex?%5Cfn_cm%20Q%28s_t%2C%20a_t%29%20%5Cleftarrow%20Q%28s_t%2C%20a_t%29%20&plus;%20%5Calpha%20%5Cleft%5Bq_t%5E%5Clambda%20-%20Q%28s_t%2C%20a_t%29%20%5Cright%5D)
 
-![](RESOURCES/sarsa.png)
+  | ![space-1.jpg](RESOURCES/sarsa.png) |
+  |:--:| 
+  |* Algorithm 4: Sarsa *               |
 
 ## 5. Temporal Difference - Q Learning
 Temporal Difference (TD) methods learn directly from raw
@@ -60,9 +62,22 @@ experience without a model of the environment’s dynamics.
 TD substitutes the expected discounted reward Gt from the
 episode with an estimation:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=1.%20init%5C%5C%0A2.%20a%5E2&bc=White&fc=Black&im=gif&fs=12&ff=arev&edit=0" align="center" border="0" alt="1. init\\2. a^2" width="50" height="40" />
-## 6. Deep Q Learning
-=======
-# awesome-rl
+![](https://latex.codecogs.com/gif.latex?V%28S_t%29%20%5Cleftarrow%20V%28S_t%29%20&plus;%20%5Calpha%5B%20R_%7Bt%20&plus;%201%7D%20&plus;%20%5Cgamma%20V%28S_%7Bt&plus;1%7D%29%20-%20V%28S_t%29%5D)
 
-![](https://latex.codecogs.com/gif.download?Q%28s_t%2C%20a_t%29%20%5Cleftarrow%20Q%28s_t%2C%20a_t%29%20+%20%5Calpha%20%5Cleft%5Br_t%20+%20%5Cgamma%20Q%28s_%7Bt+1%7D%2C%20a_%7Bt+1%7D%29%20-%20Q%28s_t%2C%20a_t%29%20%5Cright%5D)
+The following algorithm gives a generic implementation.
+
+  | ![space-1.jpg](RESOURCES/td.png) |
+  |:--:| 
+  |* Algorithm 5: Q learning *               |
+## 6. Deep Q Learning
+Created by DeepMind, Deep Q Learning, DQL, substitutes
+the Q function with a deep neural network called Q-network. It also keep track of some observation in a memory in order to use them to train the network.
+
+![](RESOURCES/q-learning1.png)
+
+Where θ are the weights of the network and U(D) is the
+experience replay history.
+
+| ![](RESOURCES/deep-q-learning.png) |
+|:--:| 
+|* Algorithm 5: Deep Q learning *  
