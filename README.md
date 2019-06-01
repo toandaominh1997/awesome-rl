@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Reinforcement learning
 
 ## Table of Contents
@@ -13,8 +12,7 @@
 
 
 ## 1. Overview - Agent-Environment Interface
-![]()
-The Agent at each step t receives a representation of the environment's state, $S_t \in S$ and it selects an action $A_t \in A(s)$. Then, as a consequence of its action the agent receives a *reward*, $R_{t+1} \in R \in R$
+The Agent at each step t receives a representation of the environment's state, ![](https://latex.codecogs.com/gif.latex?%24S_t%20%5Cin%20S%24) and it selects an action ![](https://latex.codecogs.com/gif.latex?A_t%20%5Cin%20A%28s%29). Then, as a consequence of its action the agent receives a *reward*, $R_{t+1} \in R \in R$
 ## 2. Defination
   1. Action (A): All the possible moves that the agent can take
   2. State (S): Current situation returned by the environment.
